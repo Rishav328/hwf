@@ -37,6 +37,7 @@ body {
 
 .progress-bar {
     position: fixed;
+    top: 5px;
      /* Adjust based on the height of the buttons */
     width: 90%;
     background-color: rgba(red, green, blue, 0);
