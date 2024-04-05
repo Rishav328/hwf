@@ -20,7 +20,7 @@ body {
 }
 
 .section {
-    height: 100vh; /* Each section takes up the full viewport height */
+    height: 90vh; /* Each section takes up the full viewport height */
     padding: 0;
     margin: 0;
     display: flex;
