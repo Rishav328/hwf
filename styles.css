@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;    
@@ -9,6 +10,7 @@ body {
     background-image: linear-gradient(to right, #ec008c, #bd0fb4);
     background-size: 100% 100vh;
 }
+
 .sections {
     position: relative;
     height: calc(100vh - 100px); /* Adjust for the fixed buttons and progress bar */
@@ -37,11 +39,13 @@ body {
 
 .progress-bar {
     position: fixed;
-    top: 5px;
      /* Adjust based on the height of the buttons */
+    top: 5px;
     width: 90%;
     background-color: rgba(red, green, blue, 0);
-    border: 2px solid rgb(99, 5, 99);
+    /* border: 2px solid rgb(99, 5, 99); */
+    /* border: 2px dashed white; */
+    border: 2px dotted white;
     height: 15px;
     margin-left: 4%;
     border-radius: 5px 5px;
@@ -53,7 +57,7 @@ body {
     height: 100%;
     background-color: black;
     border-radius: 5px;
-    background-image: linear-gradient(to right, #0052D4, #4364F7, #6FB1FC);
+    background-image: linear-gradient(to right, #a8ff78, #78ffd6);
     transition: width 1s;
 }
 
@@ -68,6 +72,8 @@ body {
     margin-right: 10px;
     font-family: "Pacifico", cursive;
     transition: border-radius 90ms;
+    text-shadow: 2px 3px 2px #493240;
+    user-select: none;
 }
 
 .mybuttons:hover {
@@ -81,10 +87,14 @@ body {
 }
 
 .image {
-    background-color: blue;
-    width: 39%;
+    background-image: linear-gradient(#0f0c29, #302b63, #24243e);
+    width: 60%;
     height: 40%;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 50px 15px #0d014d;
 }
 
 .glowing-card {
@@ -95,13 +105,40 @@ body {
     align-items: center;
     text-align: justify;
     padding: 10px;
-    overflow: scroll;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 5px;
+    background-image: linear-gradient(#FF0099, #493240);
+    border: 2px dashed white;
+    box-shadow: 0 0 50px 15px #493240;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    background-color: white;
 }
 
 .main {
     width: 200px;
     height: 200px;
-    background-color: blue;
+    background-image: linear-gradient(#ad5389, #3c1053);
     border-radius: 100%;
+    border: 2px dashed white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-main {
+    width: 90%;
+    height: 90%;
+    border-radius: 100%;
+    background-color: white;
+    box-shadow: 0 0 50px 15px #493240;
+}
+
+.inner-img {
+    width: 90%;
+    height: 90%;
+    border-radius: 0px 0px 20px 20px;
+    background-color: white;
 }
