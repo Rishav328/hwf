@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <title>Card</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+        * {
+            font-family: "Reddit Mono", monospace;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            background-image: linear-gradient(#03001e, #7303c0, #ec38bc, #fdeff9);
+        }
+
+        .card {
+            margin: 25px;
+            background-image: linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9);
+            box-shadow: 0 0 20px 3px #c2bddd;            ;
+            padding: 15px;
+            text-align: justify;
+            border-radius: 20px;
+            transform: translateX(0%);
+            animation-name: slide;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            filter: opacity(1);
+            filter: blur(0px);
+            border: 2px dotted white;
+        }
+
+        @keyframes slide {
+            from {
+                transform: translateX(-100%);
+                filter: opacity(0);
+                filter: blur(10px);
+            }
+
+            to {
+                transform: translateX(0%);
+                filter: opacity(1);
+                filter: blur(0px);
+            }
+        }
+
+        .inner-card {
+            background-color: white;
+            border-radius: 20px;
+            padding: 10px;
+            color: #5f104a;
+            border: 2px dotted rgb(134, 22, 91);
+        }
+        
+        .img {
+            background-image: linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9);
+            box-shadow: 0 0 20px 3px #170772;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 170px;
+            width: 170px;
+            border-radius: 100%;
+            margin: 20px 0 20px 0;
+            /* border: 2px dashed rgb(127, 83, 179); */
+        }
+
+        img {
+            height: 150px;
+            width: 150px;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" align="center">
+
+        <div class="card">
+            <h1 style='text-align: center; color: white;text-shadow: 2px 3px 2px #493240; font-family: "Pacifico", cursive;''>Happy Birthday Liza</h1>
+        </div>
+        <div class="card">
+            <div class="inner-card">
+
+            <div align="center">
+            <div class="img">
+                <img src="images/Cropped_Image (1) (2).png">
+            </div></div>
+            Waking up this morning, all I could think about was how lucky I am to have you in my life. You make every
+            day an adventure, and I can' t wait to celebrate another year with you by my side. </div>
+        </div>
+
+        <div class="card">
+            <div class="inner-card">
+                <div align="center">
+                    <div class="img">
+                        <img src="images/Cropped_Image (2) (1).png">
+                    </div>
+                </div>
+                I wish a very very very very happy birthday to the precious person of my life, my gem, my other half, my
+                bestie and my faimly. You are beautiful not from outside, but from inside from soul. You are always best
+                and
+                always good. I never loved you or stay with you by your physical apperence, I can accept you in any
+                apperence, It's your character and the connection of souls I feel with you...I know, I've told you many
+                times...but I stay because you are a good person, you are hard working person and also I've seen that
+                side
+                of you jo shayd baki log nahi dheke hai, the caring and child part of you...remember I said that I like
+                kids, I've seen you that view, kids like pure and innocent side. Thank you for coming in my life! Have a
+                very Happy birthday, Let's achieve the world together!
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="inner-card">
+                <div align="center">
+                    <div class="img">
+                        <img src="images/Cropped_Image (6).png">
+                    </div>
+                </div>
+                They say birthdays are supposed to be about the person celebrating, but all I can think about is how
+                much
+                more amazing you make my life. You're my best friend, my confidante, and the most stunning woman I know.
+            </div>
+        </div>
+    </div>
+    <a href="http://rishav328.github.io/rtg/dataL.html">Previous One</a>
+
+
+    <audio controls style=" display:none;" loop   id="music"  >
+        <source  src="audio/At-My-Worst(PagalNew.Com.Se).mp3">
+        <script>
+          window.addEventListener("click",play);
+          function play() { document.getElementById("music").play();
+          }
+        </script> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        Swal.fire({title: "Happy Birthday Liza", html: "Happy Birthday Motu!! Always be happy and enjoy your day!"})
+    </script>
+
+</body>
+
+</html>
