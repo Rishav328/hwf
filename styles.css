@@ -88,8 +88,8 @@ body {
 
 .image {
     background-image: linear-gradient(#0f0c29, #302b63, #24243e);
-    width: 60%;
-    height: 40%;
+    width: 200px;
+    height: 200px;
     border-radius: 0px 0px 20px 20px;
     display: flex;
     justify-content: center;
@@ -99,8 +99,8 @@ body {
 
 .glowing-card {
     background-color: white;
-    width: 55%;
-    height: 40%;
+    width: 200px;
+    height: 200px;
     display: flex;
     align-items: center;
     text-align: justify;
@@ -115,6 +115,9 @@ body {
     width: 100%;
     height: 100%;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main {
@@ -134,6 +137,9 @@ body {
     border-radius: 100%;
     background-color: white;
     box-shadow: 0 0 50px 15px #493240;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .inner-img {
@@ -141,4 +147,26 @@ body {
     height: 90%;
     border-radius: 0px 0px 20px 20px;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    display: block;
+    height: 90%;
+    width: 90%;
+    border-radius: 100%;
+}
+
+.img-box {
+    display: block;
+    height: 95%;
+    width: 95%;
+}
+
+.special {
+    height: 95%;
+    width: 95%;
+    border-radius: 0px 0px 20px 20px;   
 }
